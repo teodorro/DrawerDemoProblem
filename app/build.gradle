@@ -41,6 +41,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     def hilt_work_version = "1.0.0"
     def hilt_version = "2.41.0"
+    def coordinatorlayout_version = "1.1.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -54,6 +55,7 @@ dependencies {
 //    implementation "com.google.dagger:hilt-android:$hilt_version"
 //    kapt "com.google.dagger:hilt-compiler:$hilt_version"
     implementation "androidx.hilt:hilt-work:$hilt_work_version"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$coordinatorlayout_version"
 
     implementation 'com.google.dagger:hilt-android:2.41'
     kapt 'com.google.dagger:hilt-compiler:2.41'
