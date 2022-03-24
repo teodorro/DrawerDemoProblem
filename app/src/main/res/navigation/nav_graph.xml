@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/postsFragment">
+
+    <fragment
+        android:id="@+id/WallFragment"
+        android:name="com.example.myemptyuiapp.activity.WallFragment"
+        android:label="@string/title_wall"
+        tools:layout="@layout/fragment_wall"/>
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.example.myemptyuiapp.activity.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" >
+        <action
+            android:id="@+id/action_postsFragment_to_transitionalFragment"
+            app:destination="@id/transitionalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transitionalFragment"
+        android:name="com.example.myemptyuiapp.activity.TransitionalFragment"
+        android:label="fragment_transitional"
+        tools:layout="@layout/fragment_transitional" >
+        <action
+            android:id="@+id/action_transitionalFragment_to_WallFragment"
+            app:destination="@id/WallFragment" />
+    </fragment>
+</navigation>
