@@ -19,7 +19,7 @@ class TransitionalFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonToWall.setOnClickListener {
-            findNavController().navigate(R.id.action_transitionalFragment_to_WallFragment)
+            findNavController().navigate(R.id.action_transitionalFragment_to_WallPostFragment)
         }
     }
 
